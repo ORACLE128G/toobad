@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  
+  "name": "zhl_google_chrome_extension",
+  "description": "This extension allows the user to change the background color of the current page.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "img/zhl.png" //,
+    //"default_popup": "zhl.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage" ,
+    "tabs"
+  ] ,
+  "background": {
+    "presistent": true,
+    "scripts": ["js/opener.js" ]
+  }
+}
