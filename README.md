@@ -5,4 +5,4 @@ a chrome plug-in...
 Google chrome marketplace :在google chrome商城中搜索：zhl_extension可直接安装。
 ![image](https://github.com/ORACLE128G/Images/blob/master/zhl_extension/img/google_earth.png)
 
-![image](https://github.com/ORACLE128G/Images/blob/master/zhl_extension/img/zhl_extension)
+![image](https://github.com/ORACLE128G/Images/blob/master/zhl_extension/img/zhl_extension.png)
