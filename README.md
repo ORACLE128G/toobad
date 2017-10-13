@@ -6,3 +6,7 @@ Google chrome marketplace :在google chrome商城中搜索：zhl_extension可直
 ![image](https://github.com/ORACLE128G/Images/blob/master/zhl_extension/img/google_earth.png)
 
 ![image](https://github.com/ORACLE128G/Images/blob/master/zhl_extension/img/zhl_extension.png)
+
+
+2017-10-13 
+  上个版本被chrome无情删除，修改为2.0版本后重新上架了chrome web store..
