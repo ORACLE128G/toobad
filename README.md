@@ -1,8 +1,6 @@
 # google_chrome_extension_zhl
 Chrome 新标签页插件
 
-第一次发布到Chrome 商店，而且并未想好此插件用于什么用途 ，现在仅仅只能打开一个新窗口播放google earth中的视频——https://www.google.com/earth/
-
 Google chrome 插件地址：https://chrome.google.com/webstore/detail/zhlextension/kgodpebcmnmfbdhfohdlggkakmkcplei
 ![image](https://github.com/ORACLE128G/Images/blob/master/zhl_extension/img/google_earth.png)
 
