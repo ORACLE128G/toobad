@@ -19,6 +19,9 @@
     "newtab": "zhl.html"
 
   } ,
-  "permissions": [ "notifications", "unlimitedStorage", "downloads", "storage", "contextMenus", "tabs",  "webRequest", "webRequestBlocking"],
+  "permissions": [ "notifications", "unlimitedStorage", "downloads",
+    "storage", "contextMenus", "tabs",  "webRequest", "webRequestBlocking",
+    "*://*/*"
+    ],
   "web_accessible_resources": [ "img/*"  , "js/*" , "video/*"] 
 }
