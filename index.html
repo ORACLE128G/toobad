@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="img/Icon-48.png" />
     <title>Too bad</title>
     <style>
-	body {
-        	margin: 0 ;
-		padding : 0 ;
-		background-color:#37474f;
-	}
-	
-
+        body {
+                margin: 0 ;
+                padding : 0 ;
+                left : 0;
+                top : 0;
+                overflow : hidden;
+    	}
     </style>
     <script type="text/javascript" src="js/three.min.js"></script>
     <script type="text/javascript" src="js/detector.js"></script>
@@ -24,7 +25,35 @@
 
 
 </body>
-<script id="vs" type="x-shader/x-vertex" src="js/position.js"></script>
-<script id="fs" type="x-shader/x-fragment" src="js/map.js"></script>
+<script id="vs" type="x-shader/x-vertex" >
+    varying vec2 vUv;
+
+void main() {
+
+     vUv = uv;
+     gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+}
+</script>
+<script id="fs" type="x-shader/x-fragment">
+    uniform sampler2D map;
+
+uniform vec3 fogColor;
+uniform float fogNear;
+uniform float fogFar;
+
+varying vec2 vUv;
+
+void main() {
+
+    float depth = gl_FragCoord.z / gl_FragCoord.w;
+    float fogFactor = smoothstep( fogNear, fogFar, depth );
+
+    gl_FragColor = texture2D( map, vUv );
+    gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 );
+    gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
+
+}
+</script>
 <script type="text/javascript" src="js/main.js"></script>
 </html>
