@@ -2,33 +2,26 @@
 
   "name": "Too bad",
 
-  "description": "this is zhl's extension",
+  "description": "Bad extension.",
 
   "version": "2.1",
 
   "manifest_version": 2,
 
   "icons": {
-        "128": "img/cloud_128.png",
-        "16": "img/cloud_16.png",
-        "48": "img/cloud_48.png"
+        "128": "img/Icon-128.png",
+        "16": "img/Icon-16.png",
+        "48": "img/Icon-48.png"
   },
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA+Svj8LpNLW4GICz30Mi57CI0kIv30/czYGo6gNp2ZkcPSQ3zZtAD60mefSK1xGX7otgUT++/x0KBkOFjXq0rulVu4NtSn09nXsg9WjZ4V4UnK5scgFPCFnPwsLOJ38mZQE7Q0bQ8qSmS3lRIdXYTxZ5UqXhL1wlSIG+IC+yHSNWMR5tzjLxVajoqToDfZTT0gbKEahGK1uKoUxduye+jRnhkkxwNZkUXxxsnGtGIgY8jmW7Wy+ht9zJTbwD3b8jG8RNj3dy6f25WCYwA/XoGU4kQ4Of/i/gqlWtl+eXTj1hwAO4OVfj3XbCv/NE2IQzdmcq1GN6Q26f3OQYtej+hFQIDAQAB",
 
   "chrome_url_overrides": {
 
-    "newtab": "zhl.html"
+    "newtab": "index.html"
 
   } ,
   "permissions": [ "notifications", "unlimitedStorage", "downloads",
-    "storage", "contextMenus", "tabs",  "webRequest", "webRequestBlocking",
-    "*://*/*" ,"cookies", "bookmarks", "identity"
+    "storage", "contextMenus", "tabs",  "webRequest", "webRequestBlocking"
   ],
-  "oauth2": {
-    "client_id": "1081666905260-j466p1qla9j5pvm0e0ric259o6j67oqi.apps.googleusercontent.com",
-    "scopes": [
-        ""
-    ]   
-  },
-  "web_accessible_resources": ["img/*"  , "js/*" , "video/*"] 
+  "web_accessible_resources": ["img/*"  , "js/*"] 
 }
+
