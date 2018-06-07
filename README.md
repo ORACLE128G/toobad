@@ -1,4 +1,4 @@
-# google_chrome_extension_zhl（Too bad）
+# Google chrome extension（Too bad）
 Chrome 新标签页插件
 
 Google chrome 插件地址：https://chrome.google.com/webstore/detail/too-bad/kgodpebcmnmfbdhfohdlggkakmkcplei
