@@ -1,4 +1,7 @@
 # Google chrome extension（Too bad）
+
+![apm](https://img.shields.io/apm/l/vim-mode.svg)
+
 Chrome 新标签页插件
 
 ### 在线安装
