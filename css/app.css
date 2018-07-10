@@ -1,0 +1,25 @@
+body {
+    margin: 0 ;
+    padding : 0 ;
+    overflow : hidden;
+}
+.search-box{
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 50px;
+    top: 35%;
+}
+.search-box .search-bar{
+    display: block;
+    height: 50px;
+    width: 50%;
+    margin: auto;
+    border: none;
+    outline: none;
+    font: 18px arial,sans-serif;
+    box-shadow:0 5px 5px rgba(0,0,0,0.5);
+    padding-left: 10px;
+    border-radius: 2px;
+    corlor:#fff;
+    background: transparent;
+}
