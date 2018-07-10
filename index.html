@@ -7,94 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <link rel="shortcut icon" href="img/Icon-48.png" />
+    <link rel="stylesheet" href="css/app.css">
     <title>Too bad</title>
-    <style>
-        body {
-                margin: 0 ;
-                padding : 0 ;
-                overflow : hidden;
-    	}
-        .search_box{
-            position: absolute;
-            top: 0; left: 0; bottom: 0; right: 0;
-            height: 50px;
-            top: 35%;
-        }
-        .search_box .search_bar{
-            display: block;
-            height: 50px;
-            width: 50%;
-            margin: auto;
-            border: none;
-            outline: none;
-            font: 18px arial,sans-serif;
-            box-shadow:0 5px 5px rgba(0,0,0,0.3);
-            padding-left: 10px;
-            border-radius: 2px;
-            corlor:#fff;
-
-        }
-        .search_box .search_res {
-            display: block;
-            width: 50%;
-            margin: auto;
-            height: 50px;
-            padding-left: 10px;
-        }
-    </style>
     <script type="text/javascript" src="js/three.min.js"></script>
     <script type="text/javascript" src="js/detector.js"></script>
-    <!--<script id="crossorigin"></script>-->
-    <script>
-        var xhr;
-        var crossorigin = document.getElementById("crossorigin");
-        var SearchApi = {
-            googleSuggested : function (res){
-                if (!res)
-                    return;
-                var html = "";
-                try {
-                    for (var i in res[1])
-                        html += "<li>"+res[1][i]+"</li>";
-                } catch (e){
-                    throw "Error!";
-                }
-                this.dropDown(html);
-            },
-            dropDown: function (s) {
-                console.log(s   )
-                let search_res = document.getElementsByClassName("search_res")[0];
-                search_res.innerHTML = s;
-            },
-            xhrRequest : function (v) {
-                let url = "https://suggestqueries.google.com" +
-                    "/complete/search?client=chrome&q=" + v ;
-                xhr = new XMLHttpRequest();
-                xhr.open("GET" , url);
-                xhr.setRequestHeader("Access-Control-Allow-Origin" ,"*");
-                xhr.send(null);
-                console.log(xhr.responseText);
-            }
-        };
-        document.onkeydown = function (e){
-            if ( e.code == "Enter"){
-                var v = document.getElementsByClassName("search_bar")[0].value;
-                SearchApi.xhrRequest(v);
-                if (true)
-                    return;
-                crossorigin.src = "https://suggestqueries.google.com" +
-                    "/complete/search?client=chrome&q=" + v + "&callback=SearchApi\n" +
-                    ".googleSuggested";
-            }
-        }
-    </script>
 </head>
 <body>
 
 
-<div class="search_box">
-    <input type="text" class="search_bar" placeholder="Search Google">
-    <ul class="search_res"></ul>
+<div class="search-box">
+    <input type="text" class="search-bar" placeholder="Search Google">
 </div>
 
 </body>
@@ -129,4 +51,5 @@ void main() {
 }
 </script>
 <script type="text/javascript" src="js/main.js"></script>
+<script src="js/search.js"></script>
 </html>
