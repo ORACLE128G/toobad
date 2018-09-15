@@ -19,8 +19,6 @@ Chrome 新标签页插件
 
 ![image](https://gitee.com/ORACLE128G/Images/raw/master/%E8%8D%89%E5%9B%BE.png)
 
-![image](https://gitee.com/ORACLE128G/Images/raw/master/%E8%8D%89%E5%9B%BE1.png)
-
 
 ### 2017-10-13 
   
