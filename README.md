@@ -1,14 +1,15 @@
-# Google chrome extension（Too bad）
+# Google Chrome Extension（Too bad）
 
 ![apm](https://img.shields.io/apm/l/vim-mode.svg)
 
-Chrome 新标签页插件
 
-[Online Pages](https://oracle128g.github.io/toobad/)
+[在线演示 Online Pages](https://oracle128g.github.io/toobad/)
+
+### 声明：创意来自某个网站记不得了，心血来潮就做成了插件，侵权删
 
 ### 在线安装
 
-- Google chrome 插件地址：https://chrome.google.com/webstore/detail/too-bad/kgodpebcmnmfbdhfohdlggkakmkcplei
+- Google Chrome [插件地址](https://chrome.google.com/webstore/detail/too-bad/kgodpebcmnmfbdhfohdlggkakmkcplei)
 
 ### 手动安装
 
