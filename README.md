@@ -5,7 +5,7 @@
 
 [在线演示 Online Pages](https://oracle128g.github.io/toobad/)
 
-### 声明：创意来自某个网站记不得了，心血来潮就做成了插件，侵权删
+### 声明：WebGL代码来自[这里](http://dreamsky.github.io/main/blog/webgl-clouds/)，心血来潮就做成了插件，侵权删
 
 ### 在线安装
 
