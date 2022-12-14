@@ -1,4 +1,4 @@
-# Google Chrome Extension（Too bad）
+# Google Chrome Extension（Too Bad）
 
 ![apm](https://img.shields.io/apm/l/vim-mode.svg)
 
